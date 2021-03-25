@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [nameNG_Suite]">
+  <test name="Example1(failed)">
+    <classes>
+      <class name="TestDriver.TestDriver_UI">
+        <methods>
+          <include name="AccesCard_Deductions"/>
+        </methods>
+      </class> <!-- TestDriver.TestDriver_UI -->
+    </classes>
+  </test> <!-- Example1(failed) -->
+</suite> <!-- Failed suite [nameNG_Suite] -->

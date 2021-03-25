@@ -1,0 +1,10 @@
+{
+   "WorkRequestType": ["OTHER DEDUCTIONS"],
+   "PayCode":    [
+      "950146",
+      "950146"
+   ],
+   "ClientBusinessArea": [""],
+   "language": "en",
+   "TaskTypeDescription": ["DEDUCTIONS"]
+}

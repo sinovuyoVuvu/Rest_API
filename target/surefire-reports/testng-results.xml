@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="36" total="40" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="nameNG_Suite" duration-ms="14573" started-at="2020-03-09T14:58:09Z" finished-at="2020-03-09T14:58:24Z">
+    <groups>
+      <group name="Before">
+        <method signature="TestDriver.SCHEMA_NAME_on_TABLES_Before()[pri:0, instance:coreDrivers.TestDriver@6337c201]" name="SCHEMA_NAME_on_TABLES_Before" class="coreDrivers.TestDriver"/>
+      </group> <!-- Before -->
+      <group name="After">
+        <method signature="TestDriver.ARW_UC_Integrate_Ul_Obj_After()[pri:0, instance:coreDrivers.TestDriver@6337c201]" name="ARW_UC_Integrate_Ul_Obj_After" class="coreDrivers.TestDriver"/>
+        <method signature="TestDriver.Glacier_DP_Integ_Db_After()[pri:0, instance:coreDrivers.TestDriver@6337c201]" name="Glacier_DP_Integ_Db_After" class="coreDrivers.TestDriver"/>
+        <method signature="TestDriver.SI_DP_Tera_Integ_After()[pri:0, instance:coreDrivers.TestDriver@6337c201]" name="SI_DP_Tera_Integ_After" class="coreDrivers.TestDriver"/>
+      </group> <!-- After -->
+      <group name="ChangeRunDemo">
+        <method signature="TestDriver.ARW_UC_Integrate_Ul_Obj_After()[pri:0, instance:coreDrivers.TestDriver@6337c201]" name="ARW_UC_Integrate_Ul_Obj_After" class="coreDrivers.TestDriver"/>
+        <method signature="TestDriver.Glacier_DP_Integ_Db_After()[pri:0, instance:coreDrivers.TestDriver@6337c201]" name="Glacier_DP_Integ_Db_After" class="coreDrivers.TestDriver"/>
+        <method signature="TestDriver.SCHEMA_NAME_on_TABLES_Before()[pri:0, instance:coreDrivers.TestDriver@6337c201]" name="SCHEMA_NAME_on_TABLES_Before" class="coreDrivers.TestDriver"/>
+        <method signature="TestDriver.SI_DP_Tera_Integ_After()[pri:0, instance:coreDrivers.TestDriver@6337c201]" name="SI_DP_Tera_Integ_After" class="coreDrivers.TestDriver"/>
+      </group> <!-- ChangeRunDemo -->
+    </groups>
+    <test name="ChangeRunDemo" duration-ms="14573" started-at="2020-03-09T14:58:09Z" finished-at="2020-03-09T14:58:24Z">
+      <class name="coreDrivers.TestDriver">
+        <test-method status="PASS" signature="ARW_UC_Integrate_Ul_Obj_After()[pri:0, instance:coreDrivers.TestDriver@6337c201]" name="ARW_UC_Integrate_Ul_Obj_After" duration-ms="5814" started-at="2020-03-09T16:58:09Z" finished-at="2020-03-09T16:58:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ARW_UC_Integrate_Ul_Obj_After -->
+        <test-method status="PASS" signature="Glacier_DP_Integ_Db_After()[pri:0, instance:coreDrivers.TestDriver@6337c201]" name="Glacier_DP_Integ_Db_After" duration-ms="4660" started-at="2020-03-09T16:58:15Z" finished-at="2020-03-09T16:58:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Glacier_DP_Integ_Db_After -->
+        <test-method status="PASS" signature="SCHEMA_NAME_on_TABLES_Before()[pri:0, instance:coreDrivers.TestDriver@6337c201]" name="SCHEMA_NAME_on_TABLES_Before" duration-ms="2170" started-at="2020-03-09T16:58:20Z" finished-at="2020-03-09T16:58:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SCHEMA_NAME_on_TABLES_Before -->
+        <test-method status="PASS" signature="SI_DP_Tera_Integ_After()[pri:0, instance:coreDrivers.TestDriver@6337c201]" name="SI_DP_Tera_Integ_After" duration-ms="1902" started-at="2020-03-09T16:58:22Z" finished-at="2020-03-09T16:58:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SI_DP_Tera_Integ_After -->
+      </class> <!-- coreDrivers.TestDriver -->
+    </test> <!-- ChangeRunDemo -->
+  </suite> <!-- nameNG_Suite -->
+</testng-results>

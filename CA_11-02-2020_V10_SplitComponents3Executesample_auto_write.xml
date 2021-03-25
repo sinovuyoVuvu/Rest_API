@@ -1,0 +1,54 @@
+<webRowSet xmlns="http://java.sun.com/xml/ns/jdbc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/jdbc http://java.sun.com/xml/ns/jdbc/webrowset.xsd">
+<properties/>
+<metadata>
+<column-count>4</column-count>
+<column-definition>
+<column-index>1</column-index>
+<auto-increment>false</auto-increment>
+<case-sensitive>false</case-sensitive>
+<column-name>testPhase</column-name>
+<column-type>12</column-type>
+</column-definition>
+<column-definition>
+<column-index>2</column-index>
+<auto-increment>false</auto-increment>
+<case-sensitive>false</case-sensitive>
+<column-name>sqlQuery</column-name>
+<column-type>12</column-type>
+</column-definition>
+<column-definition>
+<column-index>3</column-index>
+<auto-increment>false</auto-increment>
+<case-sensitive>false</case-sensitive>
+<column-name>sqlLimitRows</column-name>
+<column-type>12</column-type>
+</column-definition>
+<column-definition>
+<column-index>4</column-index>
+<auto-increment>false</auto-increment>
+<case-sensitive>false</case-sensitive>
+<column-name>sqlAdditionalSort</column-name>
+<column-type>12</column-type>
+</column-definition>
+</metadata>
+<data>
+<currentRow>
+<columnValue>Before</columnValue>
+<columnValue>SELECT
+                 "POLICY_NR",
+                 "MEMB_SEQ_NR",
+                 "CODDISCOUNTCATEGORY_ID",
+                 "CODDISCOUNTPERCENT_AMT",
+                 "CODSTART_DT",
+                 "CODEND_DT" 
+FROM "_SYS_BIC"."bi.dp.SPF_ACTUARIAL_LIAB_IN.default/EPSILON_DISCOUNT"
+
+
+
+
+</columnValue>
+<columnValue> </columnValue>
+<columnValue> </columnValue>
+</currentRow>
+</data>
+</webRowSet>

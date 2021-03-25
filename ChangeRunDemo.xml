@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- Replaced depreciated value "false" -->
+<!--  <suite name="nameNG_Suite" parallel="false"> -->
+<suite name="nameNG_Suite" parallel="none">
+
+    
+       
+    <test name="ChangeRunDemo">
+    
+    <groups>
+       <run>
+         <include name = "ChangeRunDemo" />
+       </run>
+     </groups>
+       
+        <classes>   
+          <class name="coreDrivers.TestDriver"/>          
+        </classes>
+     </test>
+      
+</suite> <!-- Suite -->
+

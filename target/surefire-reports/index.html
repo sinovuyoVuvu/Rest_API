@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-nameNG_Suite">
+              <span class="suite-name border-passed">nameNG_Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-nameNG_Suite">
+                    <span>C:\Workspace\Eclipse\SanlamJava_V2.0\ChangeRunDemo.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-nameNG_Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-nameNG_Suite">
+                    <span>3 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-nameNG_Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-nameNG_Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-nameNG_Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-nameNG_Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">4 methods,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-nameNG_Suite" class="hide-methods passed suite-nameNG_Suite"> (hide)</a> <!-- hide-methods passed suite-nameNG_Suite -->
+                      <a href="#" panel-name="suite-nameNG_Suite" class="show-methods passed suite-nameNG_Suite"> (show)</a> <!-- show-methods passed suite-nameNG_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-nameNG_Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-nameNG_Suite" title="coreDrivers.TestDriver" hash-for-method="ARW_UC_Integrate_Ul_Obj_After">ARW_UC_Integrate_Ul_Obj_After</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-nameNG_Suite" title="coreDrivers.TestDriver" hash-for-method="Glacier_DP_Integ_Db_After">Glacier_DP_Integ_Db_After</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-nameNG_Suite" title="coreDrivers.TestDriver" hash-for-method="SCHEMA_NAME_on_TABLES_Before">SCHEMA_NAME_on_TABLES_Before</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-nameNG_Suite" title="coreDrivers.TestDriver" hash-for-method="SI_DP_Tera_Integ_After">SI_DP_Tera_Integ_After</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-nameNG_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-nameNG_Suite" class="panel nameNG_Suite">
+          <div class="suite-nameNG_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">coreDrivers.TestDriver</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ARW_UC_Integrate_Ul_Obj_After">
+                  </a> <!-- ARW_UC_Integrate_Ul_Obj_After -->
+                  <span class="method-name">ARW_UC_Integrate_Ul_Obj_After</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Glacier_DP_Integ_Db_After">
+                  </a> <!-- Glacier_DP_Integ_Db_After -->
+                  <span class="method-name">Glacier_DP_Integ_Db_After</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SCHEMA_NAME_on_TABLES_Before">
+                  </a> <!-- SCHEMA_NAME_on_TABLES_Before -->
+                  <span class="method-name">SCHEMA_NAME_on_TABLES_Before</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SI_DP_Tera_Integ_After">
+                  </a> <!-- SI_DP_Tera_Integ_After -->
+                  <span class="method-name">SI_DP_Tera_Integ_After</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-nameNG_Suite-class-passed -->
+        </div> <!-- panel nameNG_Suite -->
+        <div panel-name="test-xml-nameNG_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Workspace\Eclipse\SanlamJava_V2.0\ChangeRunDemo.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;nameNG_Suite&quot;&gt;
+  &lt;test name=&quot;ChangeRunDemo&quot;&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;ChangeRunDemo&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;coreDrivers.TestDriver&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ChangeRunDemo --&gt;
+&lt;/suite&gt; &lt;!-- nameNG_Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-nameNG_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for nameNG_Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">ChangeRunDemo (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-nameNG_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for nameNG_Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">After</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">ARW_UC_Integrate_Ul_Obj_After</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">Glacier_DP_Integ_Db_After</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">SI_DP_Tera_Integ_After</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">Before</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">SCHEMA_NAME_on_TABLES_Before</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">ChangeRunDemo</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">ARW_UC_Integrate_Ul_Obj_After</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">Glacier_DP_Integ_Db_After</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">SCHEMA_NAME_on_TABLES_Before</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">SI_DP_Tera_Integ_After</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-nameNG_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for nameNG_Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_nameNG_Suite');
+function tableData_nameNG_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(4);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'ARW_UC_Integrate_Ul_Obj_After')
+data.setCell(0, 2, 'coreDrivers.TestDriver')
+data.setCell(0, 3, 5814);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'Glacier_DP_Integ_Db_After')
+data.setCell(1, 2, 'coreDrivers.TestDriver')
+data.setCell(1, 3, 4660);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'SCHEMA_NAME_on_TABLES_Before')
+data.setCell(2, 2, 'coreDrivers.TestDriver')
+data.setCell(2, 3, 2170);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'SI_DP_Tera_Integ_After')
+data.setCell(3, 2, 'coreDrivers.TestDriver')
+data.setCell(3, 3, 1902);
+window.suiteTableData['nameNG_Suite']= { tableData: data, tableDiv: 'times-div-nameNG_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 14 seconds</span>
+              <div id="times-div-nameNG_Suite">
+              </div> <!-- times-div-nameNG_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-nameNG_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for nameNG_Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-nameNG_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">36 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">coreDrivers.TestDriver</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">SI_DP_Tera_Integ_Before</span>
+                <br/>
+                <span class="ignored-method-name">Teradata_Integration_After</span>
+                <br/>
+                <span class="ignored-method-name">Glacier_BT_Tera_Integ_Before</span>
+                <br/>
+                <span class="ignored-method-name">Glacier_User_Inte_ul_Obj_After</span>
+                <br/>
+                <span class="ignored-method-name">Cnt_OBJECT_TYPE_on_OBJS_After</span>
+                <br/>
+                <span class="ignored-method-name">SI_User_Integ_ul_Obj_Before</span>
+                <br/>
+                <span class="ignored-method-name">EI2_DP_Layer_Before</span>
+                <br/>
+                <span class="ignored-method-name">SI_UC_Integ_Db_Before</span>
+                <br/>
+                <span class="ignored-method-name">ARW_DP_layer_After</span>
+                <br/>
+                <span class="ignored-method-name">SI_BT_Tera_Integ_Before</span>
+                <br/>
+                <span class="ignored-method-name">SI_User_Integ_ul_Obj_After</span>
+                <br/>
+                <span class="ignored-method-name">SI_UC_Integ_Db_After</span>
+                <br/>
+                <span class="ignored-method-name">SCHEMA_NAME_on_TABLES_After</span>
+                <br/>
+                <span class="ignored-method-name">Glacier_User_Inte_ul_Obj_Before</span>
+                <br/>
+                <span class="ignored-method-name">Cnt_SchNmeObjType_on_OBJ_After</span>
+                <br/>
+                <span class="ignored-method-name">Glacier_DP_Integ_Db_Before</span>
+                <br/>
+                <span class="ignored-method-name">EI2_User_Integ_Ul_Obj_After</span>
+                <br/>
+                <span class="ignored-method-name">Glacier_BT_Tera_Integ_After</span>
+                <br/>
+                <span class="ignored-method-name">PRIV_on_GRANTED_PRIV_Before</span>
+                <br/>
+                <span class="ignored-method-name">EI2_User_Integ_Ul_Obj_Before</span>
+                <br/>
+                <span class="ignored-method-name">ROLE_NAME_on_GRNTD_ROLES_After</span>
+                <br/>
+                <span class="ignored-method-name">Cloudera_Integration_Before</span>
+                <br/>
+                <span class="ignored-method-name">ARW_DP_layer_Before</span>
+                <br/>
+                <span class="ignored-method-name">Cloudera_Integration_After</span>
+                <br/>
+                <span class="ignored-method-name">Glacier_DP_Tera_Integ_Before</span>
+                <br/>
+                <span class="ignored-method-name">EI2_DP_Layer_After</span>
+                <br/>
+                <span class="ignored-method-name">SCHEMA_NAME_on_OBJECTS_Before</span>
+                <br/>
+                <span class="ignored-method-name">Glacier_DP_Tera_Integ_After</span>
+                <br/>
+                <span class="ignored-method-name">SI_BT_Tera_Integ_After</span>
+                <br/>
+                <span class="ignored-method-name">PRIV_on_GRANTED_PRIV_After</span>
+                <br/>
+                <span class="ignored-method-name">Cnt_OBJECT_TYPE_on_OBJS_Before</span>
+                <br/>
+                <span class="ignored-method-name">ARW_UC_Integrate_Ul_Obj_Before</span>
+                <br/>
+                <span class="ignored-method-name">SCHEMA_NAME_on_OBJECTS_After</span>
+                <br/>
+                <span class="ignored-method-name">ROLE_NAME_on_GRNTD_ROLES_Before</span>
+                <br/>
+                <span class="ignored-method-name">Cnt_SchNmeObjType_on_OBJ_Before</span>
+                <br/>
+                <span class="ignored-method-name">Teradata_Integration_Before</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-nameNG_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">coreDrivers.TestDriver</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">ARW_UC_Integrate_Ul_Obj_After</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Glacier_DP_Integ_Db_After</span>
+                <span class="method-start">5814 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">SCHEMA_NAME_on_TABLES_Before</span>
+                <span class="method-start">10474 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">SI_DP_Tera_Integ_After</span>
+                <span class="method-start">12644 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<settings>
+
+	<xs:element name="currentdate" type="xs:dateTime" />
+
+	<!-- General settings -->
+	<general>
+
+		<ProjectName>BI</ProjectName> <!-- Name of test environment to use from test environments below -->
+		<testEnv>BI_DEV</testEnv> <!-- Name of test environment to use from test environments below -->
+		<testBrowser>Chrome</testBrowser>
+		<qcAccountName>Craig</qcAccountName> <!-- Name of account to use from QC credentials below -->
+		<qcProject>BI</qcProject> <!-- Name of project to use from QC credentials below -->
+		<qcServer>Prod_Server</qcServer> <!-- Name of server to use from QC credentials below -->
+		<qcTestSuite>BI_POC_limitedRun</qcTestSuite> <!-- Name of server to use from QC credentials below -->
+		<artifactFolder>.//artefacts</artifactFolder> <!-- Location of the test artifacts (logs, reports, screenshots -->
+		<artifactFolderDB>.//artefactsDB//dbOutput</artifactFolderDB> <!-- Location  -->
+		<DisplayReport>on</DisplayReport> <!-- Displays Report After Execution, Accepts ON and OFF  and is not case sensitive-->
+
+	</general>
+
+
+
+	<Browsers>
+
+		<Browser name="Chrome">
+			<browserlocation>.//src//main//java//resources//drivers//chrome//chromedriver_78.exe
+			</browserlocation>
+		</Browser>
+
+	</Browsers>
+
+
+
+
+	<testEnvironments>
+
+		<!-- Business Intelligence Dev -->
+		<testEnvironment name="BI_DEV">
+
+			<url>//hanabidbdev.sanlam.co.za</url>
+			<port>33015</port>
+
+		</testEnvironment>
+
+		<testEnvironment name="Dev">
+
+			<url>http://sapdsbidev.sanlam.co.za:8080/DataServices</url>
+			<somenode>someDevNodeValue</somenode>
+
+		</testEnvironment>
+
+		<testEnvironment name="PPE">
+
+			<url>http://PPE</url>
+			<somenode>somePPENodeValue</somenode>
+
+		</testEnvironment>
+
+		<testEnvironment name="CAUProd">
+			<url>http://svcdeskmanager.mud.internal.co.za/CAisd/pdmweb.exe</url>
+			<somenode>somePPENodeValue</somenode>
+		</testEnvironment>
+
+		<testEnvironment name="CAUQA">
+			<url>http://G985848:Baby@2285@svcdeskmanagerqa.mud.internal.co.za/CAisd/pdmweb1.exe
+			</url>
+			<somenode>somePPENodeValue</somenode>
+		</testEnvironment>
+
+
+	</testEnvironments>
+
+	<!-- Output Folders -->
+	<!-- Project easy name -->
+	<outputFolders>
+
+		<hanaDataBase>
+
+			<folderLocation>.//src//main//java//Output</folderLocation>
+
+		</hanaDataBase>
+
+	</outputFolders>
+
+	<!-- Quality Center -->
+	<!-- Project easy name -->
+	<almqc>
+
+		<reportingFolders>
+
+			<!-- Tier 0 is the Root evaluateLocalTime evaluateLocalDate -->
+			<reportingFolder>Automation</reportingFolder> <!-- Tier 1 -->
+			<reportingFolder>BID_POC_LimitedRun</reportingFolder> <!-- Tier 2 -->
+			<!-- <reportingFolder></reportingFolder> Tier 2 -->
+			<!-- <reportingFolder>AutomationII_evaluateLocalTime</reportingFolder> 
+				Tier 2 -->
+			<!-- <reportingFolder>AutomationIII_evaluateLocalDate</reportingFolder> 
+				Tier 3 -->
+			<!-- <reportingFolder>AutomationIV</reportingFolder> Tier 3 -->
+			<!-- Add additional tiers here -->
+
+		</reportingFolders>
+
+
+
+		<credentials>
+
+			<credential type="basic_authentication" account="Pankaj">
+				<mudid></mudid>
+				<password256>==</password256>
+			</credential>
+
+
+			<credential type="basic_authentication" account="Viwe">
+				<mudid>G987321</mudid>
+				<password256>0HjR8qmYueIhI5TC+jtPEw==</password256>
+			</credential>
+
+
+			<credential type="basic_authentication" account="Craig">
+				<mudid>g987452</mudid>
+				<password256>R5o46lRa/oX+xUz7rPTCVA==</password256>
+			</credential>
+
+
+			<credential type="basic_authentication"
+				account="automation_service">
+				<username>Svcsgsaautaccount</username>
+				<password256>nmZSsMwemeFjhGjb7f6+vQ==</password256>
+
+			</credential>
+
+		</credentials>
+
+		<projects>
+
+
+
+			<project name="BI">
+
+				<domainName>GROUP_BI</domainName>
+				<projectName>Change_Run</projectName>
+
+			</project>
+
+
+
+			<project name="Interns_Playpen">
+
+				<domainName>SANDPIT</domainName>
+				<projectName>Interns_Playpen</projectName>
+
+			</project>
+
+
+			<project name="CAUnicentre">
+
+				<domainName>GROUP_IT</domainName>
+				<projectName>CA_Unicentre</projectName>
+
+			</project>
+
+		</projects>
+
+		<servers>
+
+			<server name="Prod_Server">
+
+				<serverName>srv007409.mud.internal.co.za</serverName>
+				<portNumber>8080</portNumber>
+
+			</server>
+
+		</servers>
+
+	</almqc>
+
+</settings>

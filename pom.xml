@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>Sanlam</groupId>
+	<artifactId>GTI</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<name>GTI</name>
+	<!-- FIXME change it to the project's website -->
+	<url>http://www.example.com</url>
+
+	<!-- Maven-archetype-quickstart v1.4 -->
+	<properties>
+
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+
+		<!-- DEPENDENCY VERSIONS -->
+		<!-- JUnit -->
+		<JUnit.version>4.11</JUnit.version>
+
+		<!-- Commons-Language -->
+		<commons-lang3.version>3.9</commons-lang3.version>
+		<!-- Commons-IO -->
+		<commons-io.version>2.6</commons-io.version>
+		<!-- POI -->
+		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+		<poi.version>4.1.1</poi.version>
+		<!-- TestNG -->
+		<TestNG.version>6.10</TestNG.version>
+		<!-- Selenium -->
+		<selenium.version>3.141.59</selenium.version>
+		<!-- Rest Assured -->
+		<RestAssured.version>4.0.0</RestAssured.version>
+		<!-- Log4J -->
+		<log4J.version>2.12.1</log4J.version>
+		<!-- Extent Reports (Relevant Codes) -->
+		<extentreports-relevantcodes.version>2.41.2</extentreports-relevantcodes.version>
+		<!-- Extent Reports (Aventstack) -->
+		<extentreports-aventstack.version>4.0.9</extentreports-aventstack.version>
+		<!-- MySql -->
+		<MySQL.version>5.1.39</MySQL.version>
+
+		<!-- UCanAccess replace JBDC-ODBC bridge removed in 1.8 <UCanAccess.version>4.0.4</UCanAccess.version> -->
+
+		<!-- Spring -->
+		<spring.version>5.0.4.RELEASE</spring.version>
+		<!-- ApacheDBCP -->
+		<ApacheDBCP.version>2.1</ApacheDBCP.version>
+
+
+		<!-- Sap db connection -->
+		<ngdbc.version>1.0</ngdbc.version>
+		
+		<!-- GTI jars -->	
+		<qcUtils.version>1.5</qcUtils.version>  
+		<maskUtils.version>1.3</maskUtils.version>
+		<gtiUtils.version>1.0</gtiUtils.version>
+		<coreFramework.version>1.0</coreFramework.version>
+		
+
+	</properties>
+
+
+	<!-- DEPENDENCIES -->
+	<!-- DEPENDENCIES -->
+	<!-- DEPENDENCIES -->
+	<!-- DEPENDENCIES -->
+	<!-- DEPENDENCIES -->
+	
+	<repositories>
+		<repository>
+			<id>nexus-gsa-testing-team-repo</id>
+			<name>Sanlam Nexus Repo</name>
+			<url>http://deployables.sanlam.co.za/repository/gsa-testing-team/</url>
+		</repository>
+	</repositories>
+	
+	<dependencies>
+	
+	<!-- Dependencies for document management APIs -->
+	
+	<!-- This for JSONOBJECT -->
+  <dependency>
+      <groupId>org.json</groupId>
+      <artifactId>json</artifactId>
+     <version>20170516</version>
+  </dependency>
+       
+        
+        
+  <!--  RESST ASSURED DEPENDENCY FOR RETURNING THE RESPONSE -->
+  <dependency>
+    <groupId>io.rest-assured</groupId>
+    <artifactId>rest-assured</artifactId>
+    <version>3.2.0</version>
+    <scope>test</scope>
+</dependency>
+
+
+
+<!--  For IOUtils  -->
+<dependency>
+    <groupId>org.apache.directory.studio</groupId>
+    <artifactId>org.apache.commons.io</artifactId>
+    <version>2.4</version>
+</dependency>
+
+
+<!-- For JSONPARSER -->
+<dependency>
+     <groupId>com.googlecode.json-simple</groupId>
+     <artifactId>json-simple</artifactId>
+     <version>1.1</version>
+</dependency>
+  
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+<!-- Dependencies for the framework -->	
+
+
+		<!-- GTI jars -->	
+ 	
+		<dependency>
+			<groupId>gti</groupId>
+			<artifactId>qcUtils</artifactId>
+			<version>${qcUtils.version}</version>
+		</dependency>
+		
+		 <dependency>
+			<groupId>gti</groupId>
+			<artifactId>coreFramework</artifactId>
+			<version>${coreFramework.version}</version>
+		</dependency>
+		
+	    
+		<dependency>
+			<groupId>gti</groupId>
+			<artifactId>maskUtils</artifactId>
+			<version>${maskUtils.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>gti</groupId>
+			<artifactId>gtiUtils</artifactId>
+			<version>${gtiUtils.version}</version>
+		</dependency>
+		
+
+		
+
+		<!-- UCanAccess can be used for Access NOT Excel -->
+		<!-- Oracle done away with the JDBC-ODBC bridge from Java 8 used for Excel 
+			and Access connection <dependency> <groupId>net.sf.ucanaccess</groupId> <artifactId>ucanaccess</artifactId> 
+			<version>${UCanAccess.version}</version> </dependency> -->
+
+		<!-- JUnit -->
+		<!-- Maven-archetype-quickstart v1.4 -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${JUnit.version}</version>
+			<!-- <scope>test</scope> -->
+		</dependency>
+
+		<!-- Commons -->
+		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>${commons-lang3.version}</version>
+
+		</dependency>
+
+
+		<!-- TestNG -->
+		<!-- https://testng.org/doc/download.html -->
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>${TestNG.version}</version>
+			<scope>compile</scope>
+		</dependency>
+
+
+		<!-- Log4j API -->
+		<!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api -->
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-api</artifactId>
+			<version>${log4J.version}</version>
+		</dependency>
+
+		<!-- Log4j Core -->
+		<!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>${log4J.version}</version>
+
+		</dependency>
+
+        	<dependency>
+			<groupId>sapDatabaseConnection</groupId>
+			<artifactId>ngdbc</artifactId>
+			<version>${ngdbc.version}</version>
+		</dependency>
+
+		<!-- Extent Reports -->
+		<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+		<dependency>
+			<groupId>com.aventstack</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>${extentreports-aventstack.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.relevantcodes</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>${extentreports-relevantcodes.version}</version>
+		</dependency>
+
+    
+         
+
+
+		<!-- Selenium -->
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>${selenium.version}</version>
+		</dependency>
+
+
+		<!-- IO File Utils -->
+		<!-- https://mvnrepository.com/artifact/<version>${poi.version</version>/commons-io -->
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>${commons-io.version}</version>
+		</dependency>
+
+
+		<!-- Apache POI - Java API To Access Microsoft Format Files -->
+		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>${poi.version}</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+
+			<version>${poi.version}</version>
+		</dependency>
+
+
+		<!-- Rest Assured -->
+		<!-- http://code.google.com/p/rest-assured -->
+		<!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+		<dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>rest-assured</artifactId>
+			<version>${RestAssured.version}</version>
+			<!-- <scope>test</scope> -->
+		</dependency>
+
+		<!-- Rest Assured Json path -->
+		<!-- https://mvnrepository.com/artifact/io.rest-assured/json-path -->
+		<dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>json-path</artifactId>
+			<version>${RestAssured.version}</version>
+		</dependency>
+
+	
+
+		
+
+		<!-- Rest Assured Json schema validator -->
+		<!-- https://mvnrepository.com/artifact/io.rest-assured/json-schema-validator -->
+		<dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>json-schema-validator</artifactId>
+			<version>${RestAssured.version}</version>
+		</dependency>
+
+		<!-- Rest Assured XML path -->
+		<!-- https://mvnrepository.com/artifact/io.rest-assured/xml-path -->
+		<dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>xml-path</artifactId>
+			<version>${RestAssured.version}</version>
+		</dependency>
+
+		<!-- Rest Assured common -->
+		<!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured-common -->
+		<dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>rest-assured-common</artifactId>
+			<version>${RestAssured.version}</version>
+		</dependency>
+
+		<!-- Rest Assured spring mock -->
+		<!-- https://mvnrepository.com/artifact/io.rest-assured/spring-mock-mvc -->
+		<dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>spring-mock-mvc</artifactId>
+			<version>${RestAssured.version}</version>
+			<!-- <scope>test</scope> -->
+		</dependency>
+
+
+		<!-- MySQL Driver -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>${MySQL.version}</version>
+		</dependency>
+
+   
+         
+  
+
+             <!-- Framework Driver 
+		<dependency>
+			<groupId>FrameworkTemplate</groupId>
+			<artifactId>Template</artifactId>
+			<version>1.05</version>
+		</dependency> -->
+   
+               <!-- Framework Driver 
+		<dependency>
+			<groupId>FrameworkTemplate</groupId>
+			<artifactId>Template</artifactId>
+			<version>1.05</version>
+		</dependency> -->
+
+		<!-- Spring -->
+		<!-- https://netjs.blogspot.com/2015/10/spring-example-program-using-javaconfig-annotations.html 
+			Spring example not completed - Craig Adam <dependency> <groupId>javax.inject</groupId> 
+			<artifactId>javax.inject</artifactId> <version>1</version> </dependency> -->
+		<!-- Apache DBCP connection pool Spring example not completed - Craig Adam 
+			<dependency> <groupId>org.apache.commons</groupId> <artifactId>commons-dbcp2</artifactId> 
+			<version>${ApacheDBCP.version}</version> </dependency> -->
+
+		<!-- Spring JDBC Support Spring example not completed - Craig Adam <dependency> 
+			<groupId>org.springframework</groupId> <artifactId>spring-jdbc</artifactId> 
+			<version>${spring.version}</version> </dependency> -->
+
+		<!-- Spring <dependency> <groupId>org.springframework</groupId> <artifactId>spring-core</artifactId> 
+			<version>${spring.version}</version> </dependency> <dependency> <groupId>org.springframework</groupId> 
+			<artifactId>spring-context</artifactId> <version>${spring.version}</version> 
+			</dependency> -->
+
+
+
+		<!-- LeanFT Copy and paste from "In Eclipse, use the LeanFT > LeanFT Testing 
+			Project" template Craig Adam 02-12-2019 -->
+		<!-- Check box Maven project <dependency> <groupId>com.hp.lft</groupId> 
+			<artifactId>sdk</artifactId> <version>14.52.0</version> </dependency> <dependency> 
+			<groupId>com.hp.lft</groupId> <artifactId>report</artifactId> <version>14.52.0</version> 
+			</dependency> <dependency> <groupId>com.hp.lft</groupId> <artifactId>unittesting</artifactId> 
+			<version>14.52.0</version> </dependency> <dependency> <groupId>com.hp.lft</groupId> 
+			<artifactId>verifications</artifactId> <version>14.52.0</version> </dependency> -->
+
+
+	</dependencies>
+
+
+	<!-- BUILD -->
+	<!-- BUILD -->
+	<!-- BUILD -->
+	<!-- BUILD -->
+	<!-- BUILD -->
+
+	<build>
+
+		<!-- Add directory to search for resources.drivers -->
+		<resources>
+
+			<!-- Add directory to search for resources -->
+			<!--test resources.drivers -->
+			<resource>
+
+				<directory>src/test/java/resources.drivers</directory>
+
+			</resource>
+
+			<!-- Add additional directory to search for resources -->
+			<!--main resourcesMain -->
+			<resource>
+
+				<directory>src/main/java/filesTest</directory>
+
+			</resource>
+
+			<!-- Add additional directory to search for resources -->
+			<!--main resourcesMain -->
+			<resource>
+
+				<directory>src/main/java/resourcesMain</directory>
+
+			</resource>
+
+			<!-- Add additional directory to search for resources -->
+			<!-- resources -->
+			<resource>
+
+				<directory>src/test/resources</directory>
+
+			</resource>
+
+		</resources>
+
+
+		<!-- PLUGIN MANAGEMENT -->
+		<!-- PLUGIN MANAGEMENT -->
+		<!-- PLUGIN MANAGEMENT -->
+		<!-- PLUGIN MANAGEMENT -->
+		<!-- PLUGIN MANAGEMENT -->
+
+		<!-- Maven-archetype-quickstart v1.4 -->
+		<pluginManagement><!-- lock down plugins versions to avoid using Maven 
+				defaults (may be moved to parent pom) -->
+
+			<plugins>
+
+
+				<!-- Maven-archetype-quickstart v1.4 default to root directory for testNG.xml -->
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-surefire-plugin</artifactId>
+					<version>2.22.1</version>
+
+					<!-- Add parameter for suit to run via command line -->
+					<configuration>
+						<suiteXmlFiles>
+							<!-- Hard code filename -->
+							<!--<suiteXmlFile>c:/eclipse-workspace/GTI/src/test/java/Sanlam/GTI/NG_Suite1.xml</suiteXmlFile> -->
+							<!--<suiteXmlFile>NG_Suitetest.xml</suiteXmlFile>-->
+							<!-- filename parameter -->
+							<!-- need to add directory to search if not in root ie GTI\ Below 
+								OK -->
+							<!-- <suiteXmlFile>./src/test/java/Sanlam/GTI/${suiteXmlFile}</suiteXmlFile> -->
+							<!-- add directory to search to <resources.drivers> above -->
+							<!-- pass as parameter during cmd mvn build above -->
+							<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
+						</suiteXmlFiles>
+					</configuration>
+
+				</plugin>
+
+				<!-- Maven-archetype-quickstart v1.4 -->
+				<!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
+				<plugin>
+					<artifactId>maven-clean-plugin</artifactId>
+					<version>3.1.0</version>
+				</plugin>
+
+				<!-- Maven-archetype-quickstart v1.4 -->
+				<!-- default lifecycle, jar packaging: see https://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_jar_packaging -->
+				<plugin>
+					<artifactId>maven-resources.drivers-plugin</artifactId>
+					<version>3.0.2</version>
+				</plugin>
+
+				<!-- Maven-archetype-quickstart v1.4 -->
+				<plugin>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>3.8.0</version>
+				</plugin>
+
+				<!-- Maven-archetype-quickstart v1.4 -->
+				<plugin>
+					<artifactId>maven-jar-plugin</artifactId>
+					<version>3.0.2</version>
+				</plugin>
+
+				<!-- Maven-archetype-quickstart v1.4 -->
+				<plugin>
+					<artifactId>maven-install-plugin</artifactId>
+					<version>2.5.2</version>
+				</plugin>
+
+				<!-- Maven-archetype-quickstart v1.4 -->
+				<plugin>
+					<artifactId>maven-deploy-plugin</artifactId>
+					<version>2.8.2</version>
+				</plugin>
+
+				<!-- site lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#site_Lifecycle -->
+				<plugin>
+					<artifactId>maven-site-plugin</artifactId>
+					<version>3.7.1</version>
+				</plugin>
+
+				<!-- Maven-archetype-quickstart v1.4 -->
+				<plugin>
+					<artifactId>maven-project-info-reports-plugin</artifactId>
+					<version>3.0.0</version>
+				</plugin>
+
+			</plugins>
+
+		</pluginManagement>
+
+	</build>
+
+</project>
